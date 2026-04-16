@@ -1,0 +1,40 @@
+# ==========================================
+# ملف إعدادات Flet الشامل (نسخة بدون صور)
+# ==========================================
+
+app:
+  # اسم التطبيق الذي سيظهر على الهاتف
+  name: "Smart Grocery"
+  
+  # اسم الحزمة (يجب أن يكون فريداً)
+  package_name: com.nabel.smartgrocery
+  
+  # الإصدار
+  version: "1.0.0"
+  build_number: 1
+  
+  # بما أنه لا توجد صور، نترك مجلد الأصول فارغاً أو نعطله
+  # assets_dir: assets
+
+android:
+  # الأذونات الضرورية لعمل قاعدة البيانات والاتصال
+  permissions:
+    - INTERNET
+    - WRITE_EXTERNAL_STORAGE
+    - READ_EXTERNAL_STORAGE
+
+  # لضمان استقرار الواجهة على الهواتف
+  screen_orientation: portrait
+  
+  # اسم النشاط الرئيسي (افتراضي لـ Flet)
+  main_activity_name: ".MainActivity"
+
+# استبعاد الملفات غير الضرورية لتقليل حجم الـ APK
+exclude_files:
+  - .venv/**
+  - __pycache__/**
+  - .git/**
+  - build/**
+  - .github/**
+  - README.md
+  - .gitignore
