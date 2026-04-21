@@ -320,8 +320,6 @@ class AppUI:
             ft.Container(
                 expand=True,
                 gradient=ft.LinearGradient(
-                    begin=ft.alignment.top_right,
-                    end=ft.alignment.bottom_left,
                     colors=["#1565C0", "#0D47A1"],
                 ),
                 padding=ft.padding.symmetric(horizontal=30),
@@ -358,7 +356,7 @@ class AppUI:
                         width=45,
                         height=45,
                         border_radius=12,
-                        alignment=ft.alignment.center,
+                        alignment=ft.Alignment(0, 0),
                     ),
                     ft.Container(width=12),
                     ft.Column(
@@ -782,7 +780,7 @@ class AppUI:
                         spacing=5,
                     ),
                     padding=30,
-                    alignment=ft.alignment.center,
+                    alignment=ft.Alignment(0, 0),
                 )
             )
 
@@ -825,7 +823,7 @@ class AppUI:
                                     ft.Container(
                                         content=ft.Text(str(qty), size=18, weight="bold", text_align="center"),
                                         width=35,
-                                        alignment=ft.alignment.center,
+                                        alignment=ft.Alignment(0, 0),
                                         tooltip="الكمية المطلوبة",
                                     ),
                                     ft.IconButton(
@@ -1224,7 +1222,7 @@ class AppUI:
                 ft.Container(
                     content=ft.Text("لا توجد منتجات مطابقة", size=16, color="#999", text_align="center"),
                     padding=50,
-                    alignment=ft.alignment.center,
+                    alignment=ft.Alignment(0, 0),
                 )
             )
             
@@ -1390,7 +1388,7 @@ class AppUI:
                         width=45,
                         height=45,
                         border_radius=12,
-                        alignment=ft.alignment.center,
+                        alignment=ft.Alignment(0, 0),
                     ),
                     ft.Container(width=12),
                     ft.Column(
@@ -1490,7 +1488,7 @@ class AppUI:
                         horizontal_alignment="center",
                     ),
                     padding=50,
-                    alignment=ft.alignment.center,
+                    alignment=ft.Alignment(0, 0),
                 )
             )
 
@@ -1652,7 +1650,7 @@ class AppUI:
                 ft.Container(
                     content=ft.Text("لا توجد مبيعات اليوم", size=16, color="#999"),
                     padding=50,
-                    alignment=ft.alignment.center,
+                    alignment=ft.Alignment(0, 0),
                 )
             )
 
@@ -1695,7 +1693,7 @@ class AppUI:
                                 width=40,
                                 height=40,
                                 border_radius=20,
-                                alignment=ft.alignment.center,
+                                alignment=ft.Alignment(0, 0),
                             ),
                             ft.Container(width=10),
                             ft.Column(
@@ -1729,7 +1727,7 @@ class AppUI:
                         horizontal_alignment="center",
                     ),
                     padding=50,
-                    alignment=ft.alignment.center,
+                    alignment=ft.Alignment(0, 0),
                 )
             )
 
